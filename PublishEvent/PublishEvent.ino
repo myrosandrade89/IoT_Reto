@@ -23,6 +23,7 @@ JsonObject& root = jsonBuffer.createObject();
 String response;
 int statusCode = 0;
 String dataStr;
+int gasStatus;
 const int ANALOG_PIN = 0;
 
 void setup() {
@@ -51,7 +52,7 @@ void setup() {
 // Thing function runs continiously
 void loop() {
   
-  root["name"] = "oliviart";
+  root["name"] = "Olimpo";
   root["data"] =  analogRead (ANALOG_PIN);
 
   // if you get a connection, report back via serial:
